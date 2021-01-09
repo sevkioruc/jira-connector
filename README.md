@@ -316,25 +316,41 @@ You can now only use the Cookie Jar for all the following request, as long as th
 is still valid!
 
 ## Supported API Calls
+<details>
+  <summary>applicationProperties (/rest/api/2/application-properties)</summary>
 
-- applicationProperties (/rest/api/2/application-properties)
   - getProperties
   - setProperty
-- attachment (/rest/api/2/attachment)
+</details>
+<details>
+  <summary>attachment (/rest/api/2/attachment)</summary>
+
   - getAttachment
   - deleteAttachment
   - getGlobalAttachmentMetadata
-- auditing (/rest/api/2/auditing)
+</details>
+<details>
+  <summary>auditing (/rest/api/2/auditing)</summary>
+
   - getAudits
   - createAudit
-- avatar (/rest/api/2/avatar) (Untested; use at your own peril)
+</details>
+<details>
+  <summary>avatar (/rest/api/2/avatar) (Untested; use at your own peril)</summary>
+
   - getAvatars
   - createTemporaryAvatar
   - cropTemporaryAvatar
-- backlog (/rest/agile/1.0/backlog)
+</details>
+<details>
+  <summary>backlog (/rest/agile/1.0/backlog)</summary>
+
   - moveIssuesToBacklog
   - moveIssuesToBacklogForBoard
-- board (/rest/agile/1.0/board)
+</details>
+<details>
+  <summary>board (/rest/agile/1.0/board)</summary>
+
   - getAllBoards
   - createBoard
   - getBoardByFilterId
@@ -361,20 +377,32 @@ is still valid!
   - getAllSprints
   - getIssuesForSprint
   - getAllVersions
-- comment (/rest/api/2/comment)
+</details>
+<details>
+  <summary>comment (/rest/api/2/comment)</summary>
+
   - getCommentPropertyKeys
   - setCommentProperty
   - getCommentProperty
   - deleteCommentProperty
-- component (/rest/api/2/component)
+</details>
+<details>
+  <summary>component (/rest/api/2/component)</summary>
+
   - getComponent
   - createComponent
   - editComponent
   - deleteComponent
   - getRelatedIssueCount
-- customFieldOption (/rest/api/2/customFieldOptions)
+</details>
+<details>
+  <summary>customFieldOption (/rest/api/2/customFieldOptions)</summary>
+
   - getCustomFieldOption
-- epic (/rest/agile/1.0/epic)
+</details>
+<details>
+  <summary>epic (/rest/agile/1.0/epic)</summary>
+
   - getIssuesWithoutEpic
   - removeIssuesFromEpic
   - getEpic
@@ -382,20 +410,26 @@ is still valid!
   - getIssuesForEpic
   - moveIssuesToEpic
   - rankEpics
-- dashboard (/rest/api/2/dashboard)
+</details>
+<details>
+  <summary>dashboard (/rest/api/2/dashboard)</summary>
+
   - getAllDashboards
   - getDashboard
-- developmentInformation (/rest/devinfo)
+</details>
+<details>
+  <summary>developmentInformation (/rest/devinfo)</summary>
+
   - store
   - getRepository
   - deleteRepository
   - deleteByProperties
   - checkExists
   - deleteEntity
-- field (/rest/api/2/field)
-  - getAllFields
-  - createCustomField
-- filter (/rest/api/2/filter)
+</details>
+<details>
+  <summary>field (/rest/api/2/field)</summary>
+
   - createFilter
   - getFilter
   - updateFilter
@@ -406,18 +440,30 @@ is still valid!
   - getDefaultShareScope
   - setDefaultShareScope
   - getFavoriteFilters
-- group (/rest/api/2/group)
+</details>
+<details>
+  <summary>group (/rest/api/2/group)</summary>
+
   - createGroup
   - getGroup [DEPRECATED, use getMembers]
   - addUserToGroup
   - removeUserFromGroup
   - deleteGroup
   - getMembers
-- groups (/rest/api/2/groups)
+</details>
+<details>
+  <summary>groups (/rest/api/2/groups)</summary>
+
   - findGroups
-- groupUserPicker (/rest/api/2/groupuserpicker)
+</details>
+<details>
+  <summary>groupUserPicker (/rest/api/2/groupuserpicker)</summary>
+
   - findUsersAndGroups
-- issue (/rest/api/2/issue and /rest/agile/1.0/issue)
+</details>
+<details>
+  <summary>issue (/rest/api/2/issue and /rest/agile/1.0/issue)</summary>
+
   - getIssue (agile api, set `opts.agile: true`)
   - getIssueEstimation (agile api)
   - setIssueEstimation (agile api)
@@ -462,49 +508,88 @@ is still valid!
   - deleteProperty
   - getIssuePicker
   - getChangelog
-- issueLink (/rest/api/2/issueLink)
+</details>
+<details>
+  <summary>issueLink (/rest/api/2/issueLink)</summary>
+
   - createIssueLink
   - getIssueLink
   - deleteIssueLink
-- issueLinkType (/rest/api/2/issueLinkType)
+</details>
+<details>
+  <summary>issueLinkType (/rest/api/2/issueLinkType)</summary>
+
   - getAvailableTypes
   - createIssueLinkType
   - getIssueLinkType
   - deleteIssueLinkType
   - editIssueLinkType
-- issueType (/rest/api/2/issuetype)
+</details>
+<details>
+  <summary>issueType (/rest/api/2/issuetype)</summary>
+
   - getAllIssueTypes
   - getIssueType
   - createIssueType
   - deleteIssueType
   - updateIssueType
   - getAlternativeIssueTypes
-- jql (/rest/api/2/jql/autocompletedata)
+</details>
+<details>
+  <summary>jql (/rest/api/2/jql/autocompletedata)</summary>
+
   - getAutoCompleteData
-- labels (/rest/api/1.0/labels/suggest?query= and /rest/api/2/label)
+</details>
+<details>
+  <summary>labels (/rest/api/1.0/labels/suggest?query= and /rest/api/2/label)</summary>
+
   - getLabels
   - getAllLabels
-- licenseRole (/rest/api/2/licenserole)
+</details>
+<details>
+  <summary>licenseRole (/rest/api/2/licenserole)</summary>
+
   - getAllLicenseRoles
   - getLicenseRole
   - editLicenseRole
-- licenseValidator (/rest/api/2/licenseValidator)
+</details>
+<details>
+  <summary>licenseValidator (/rest/api/2/licenseValidator)</summary>
+
   - validateLicense
-- myPermissions (/rest/api/2/mypermissions)
+</details>
+<details>
+  <summary>myPermissions (/rest/api/2/mypermissions)</summary>
+
   - getMyPermissions
-- myPreferences (/rest/api/2/mypreferences)
+</details>
+<details>
+  <summary>myPreferences (/rest/api/2/mypreferences)</summary>
+
   - getPreference
   - editPreference
   - deletePreference
-- myself (/rest/api/2/myself)
+</details>
+<details>
+  <summary>myself (/rest/api/2/myself)</summary>
+
   - getMyself
   - editMyslef
   - changePassword
-- password (/rest/api/2/password)
+</details>
+<details>
+  <summary>password (/rest/api/2/password)</summary>
+
   - getPasswordPolicy
-- permissions (/rest/api/2/permissions)
+</details>
+<details>
+  <summary>permissions (/rest/api/2/permissions)</summary>
+
   - getAllPermissions
-- permissionScheme (/rest/api/2/permissionscheme)
+</details>
+<details>
+  <summary>permissionScheme (/rest/api/2/permissionscheme)</summary>
+
   - getAllPermissionSchemes
   - createPermissionScheme
   - getPermissionScheme
@@ -514,10 +599,16 @@ is still valid!
   - createPermissionGrantInScheme
   - deletePermissionGrantFromScheme
   - getPermissionSchemeGrantById
-- priority (/rest/api/2/priority)
+</details>
+<details>
+  <summary>priority (/rest/api/2/priority)</summary>
+
   - getAllPriorities
   - getPriority
-- project (/rest/api/2/project)
+</details>
+<details>
+  <summary>project (/rest/api/2/project)</summary>
+
   - getAllProjects
   - getProject
   - getComponents
@@ -529,18 +620,33 @@ is still valid!
   - updateRole
   - updateProject
   - addToRole
-- projectCategory (/rest/api/2/projectCategory)
+</details>
+<details>
+  <summary>projectCategory (/rest/api/2/projectCategory)</summary>
+
   - getAllProjectCategories
   - getProjectCategory
-- projectValidate (/rest/api/2/projectvalidate)
+</details>
+<details>
+  <summary>projectValidate (/rest/api/2/projectvalidate)</summary>
+
   - validateProjectKey
-- reindex (/rest/api/2/reindex)
+</details>
+<details>
+  <summary>reindex (/rest/api/2/reindex)</summary>
+
   - doReindex
   - getReindex
-- resolution (/rest/api/2/resolution)
+</details>
+<details>
+  <summary>resolution (/rest/api/2/resolution)</summary>
+
   - getAllResolutions
   - getResolution
-- roles (/rest/api/2/role) (a.k.a. ProjectRoles)
+</details>
+<details>
+  <summary>roles (/rest/api/2/role) (a.k.a. ProjectRoles)</summary>
+
   - getAll
   - createRole
   - getRoleById
@@ -549,7 +655,10 @@ is still valid!
   - getActors
   - addActors
   - removeActor
-- screens (/rest/api/2/screens)
+</details>
+<details>
+  <summary>screens (/rest/api/2/screens)</summary>
+
   - getAvailableFields
   - getTabs
   - createTab
@@ -561,16 +670,31 @@ is still valid!
   - moveFieldOnTab
   - moveTabPosition
   - addFieldToDefaultTab
-- search (/rest/api/2/search)
+</details>
+<details>
+  <summary>search (/rest/api/2/search)</summary>
+
   - search
-- securityLevel (/rest/api/2/securitylevel)
+</details>
+<details>
+  <summary>securityLevel (/rest/api/2/securitylevel)</summary>
+
   - getSecurityLevel
-- serverInfo (/rest/api/2/serverInfo)
+</details>
+<details>
+  <summary>serverInfo (/rest/api/2/serverInfo)</summary>
+
   - getServerInfo
-- settings (/rest/api/2/settings)
+</details>
+<details>
+  <summary>settings (/rest/api/2/settings)</summary>
+
   - setBaseUrl
   - getIssueNavColumns
-- sprint (/rest/agile/1.0/sprint)
+</details>
+<details>
+  <summary>sprint (/rest/agile/1.0/sprint)</summary>
+
   - createSprint
   - getSprint
   - updateSprint
@@ -579,13 +703,22 @@ is still valid!
   - getSprintIssues
   - moveSprintIssues
   - swapSprint
-- status (/rest/api/2/status)
+</details>
+<details>
+  <summary>status (/rest/api/2/status)</summary>
+
   - getAllStatuses
   - getStatus
-- statusCategory (/rest/api/2/statuscategory)
+</details>
+<details>
+  <summary>statusCategory (/rest/api/2/statuscategory)</summary>
+
   - getAllStatusCategories
   - getStatusCategory
-- user (/rest/api/2/user)
+</details>
+<details>
+  <summary>user (/rest/api/2/user)</summary>
+
   - getUser
   - deleteUser
   - editUser
@@ -604,7 +737,10 @@ is still valid!
   - search
   - all
   - viewIssueSearch
-- version (/rest/api/2/version)
+</details>
+<details>
+  <summary>version (/rest/api/2/version)</summary>
+
   - createVersion
   - moveVersion
   - getVersion
@@ -618,14 +754,23 @@ is still valid!
   - deleteVersion
   - deleteAllRemoteLinks
   - getGlobalRemoteLink
-- webhook (/rest/webhooks/1.0/webhook)
+</details>
+<details>
+  <summary>webhook (/rest/webhooks/1.0/webhook)</summary>
+
   - getAllWebhooks
   - getWebhook
   - createWebhook
   - deleteWebhook
-- workflow (/rest/api/2/workflow)
+</details>
+<details>
+  <summary>workflow (/rest/api/2/workflow)</summary>
+
   - getWorkflows
-- workflowScheme (/rest/api/2/workflowscheme)
+</details>
+<details>
+  <summary>workflowScheme (/rest/api/2/workflowscheme)</summary>
+
   - createWorkflowScheme
   - editWorkflowScheme
   - deleteWorkflowScheme
@@ -651,10 +796,14 @@ is still valid!
   - getDraftWorkflow
   - editDraftWorkflow
   - deleteDraftWorkflow
-- worklog (/rest/api/2/worklog)
+</details>
+<details>
+  <summary>worklog (/rest/api/2/worklog)</summary>
+
   - getWorklogDeleted
   - worklogList
   - getWorklogUpdated
+</details>
 
 ## License
 
