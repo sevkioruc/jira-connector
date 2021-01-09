@@ -430,6 +430,12 @@ is still valid!
 <details>
   <summary>field (/rest/api/2/field)</summary>
 
+  - getAllFields
+  - createCustomField
+</details>
+<details>
+  <summary>filter (/rest/api/2/filter)</summary>
+
   - createFilter
   - getFilter
   - updateFilter
